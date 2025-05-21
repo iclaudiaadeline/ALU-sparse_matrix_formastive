@@ -17,6 +17,13 @@ This Python project implements operations on sparse matrices, including addition
 
 Each input file should be formatted
 
+## Usage
+
+- clone this repository to you local pc
+- check the format of input file  that located in  sample_inputs folder
+- feel free to add any oyther input files in that folder as long as they follow the format
+- save and run the file
+
 ## ⚠ Error Handling
 
 * Invalid file format raises 
