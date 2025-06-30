@@ -10,8 +10,8 @@ def getTuples(location):
     with open(location, 'r') as file:
         try:
             #getting rows and columns 
-            rows = int(file.readline().strip().split("=")[1])+1
-            cols = int(file.readline().strip().split("=")[1])+1
+            rows = int(file.readline().strip().split("=")[1])
+            cols = int(file.readline().strip().split("=")[1])
         except:
             raise ValueError("Input file has wrong format")
         
@@ -139,8 +139,8 @@ def toFile(A,location):
 
     #populating number of rows and colums and list of tuples in output file location
     with open(location,'w') as file: #it will create the file if it doesn't exit
-        file.write(f"rows = {r-1}\n")
-        file.write(f"columns = {c-1}\n")
+        file.write(f"rows = {r}\n")
+        file.write(f"columns = {c}\n")
         for tuple in tuples:
             file.write(f"{tuple}\n") 
 
