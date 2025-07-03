@@ -147,13 +147,15 @@ def toFile(A,location):
 # defining main function
 def main():
     #locating main directories using os module path method
-    base_dir=os.path.dirname(__file__)
+    base_dir=os.path.dirname(_file_)
     input_loc=os.path.join(base_dir,"../../sample_inputs")
     output_loc=os.path.join(base_dir,"../../sample_outputs")
 
     # locating files input files for matrice
-    matrix1_loc=os.path.join(base_dir,f"{input_loc}/matrix1.txt")
-    matrix2_loc=os.path.join(base_dir,f"{input_loc}/matrix2.txt")
+    f1=os.path.abspath(input("enter absolute path of 1st matrix file: "))
+    f2=os.path.abspath(input("enter absolute path of 2nd matrix file: "))
+    matrix1_loc=os.path.join(base_dir,f1)
+    matrix2_loc=os.path.join(base_dir,f2)
 
     # extracting rows,columns and list of tuples from allocated files
     i,j,A=getTuples(matrix1_loc)
@@ -164,22 +166,35 @@ def main():
     M2=Sparcematrix(B,m,n)
 
     #calculating sum and storing result in output file
-    if i==m and j==n:
-        summation=Add(M1,M2)
-        toFile(summation,f"{output_loc}/summation.txt")
+    print("choose operation to perform on the two matrices:")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    choice=int(input("enter your choice: "))
+    if choice not in [1, 2, 3]:
+        print("Invalid choice. Please select a valid operation.")
+        return
+    print("performing operation...")
 
-        #calculating Subtraction and storing result in output file
-        subtraction=Sub(M1,M2)
-        toFile(subtraction,f"{output_loc}/subtraction.txt")
-    else:
-        print("failed to calculate Sum and subtraction, number of rows and columns must be equal")
     
-    #calculating Product and storing result in output file
-    if j==m:
-        Multiplication=Multi(M1,M2)
-        toFile(Multiplication,f"{output_loc}/Multiplication.txt")
-    else:
-        print("failed to calculate product, columns of 1st matrix must be eqaul to rows of second matrix")
-
-if __name__== '__main__':
+    if choice==1:
+        if i==m and j==n:
+            summation=Add(M1,M2)
+            toFile(summation,f"{output_loc}/summation.txt")
+        else:
+            print("failed to calculate Sum, number of rows and columns must be equal")
+    elif choice==2:
+        if i==m and j==n:
+            subtraction=Sub(M1,M2)
+            toFile(subtraction,f"{output_loc}/subtraction.txt")
+        else:
+            print("failed to calculate Subtraction, number of rows and columns must be equal")
+    elif choice==3:
+        if j==m:
+            Multiplication=Multi(M1,M2)
+            toFile(Multiplication,f"{output_loc}/Multiplication.txt")
+        else:
+            print("failed to calculate Multiplication, columns of 1st matrix must be equal to rows of second matrix")
+    print("operation completed successfully, results are stored in sample_outputs folder")
+if __name__== '_main_':
     main()

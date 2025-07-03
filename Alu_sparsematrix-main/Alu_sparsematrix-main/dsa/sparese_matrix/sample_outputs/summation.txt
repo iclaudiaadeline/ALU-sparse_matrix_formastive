@@ -1,5 +1,5 @@
-rows = 2
-columns = 2
+rows = 3
+columns = 3
 (0, 0, 2)
 (0, 1, 12)
 (0, 2, 7)
