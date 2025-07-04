@@ -147,7 +147,9 @@ def toFile(A,location):
 # defining main function
 def main():
     #locating main directories using os module path method
-    base_dir=os.path.dirname(_file_)
+    base_dir=os.path.dirname(__file__
+                             
+                             )
     input_loc=os.path.join(base_dir,"../../sample_inputs")
     output_loc=os.path.join(base_dir,"../../sample_outputs")
 
@@ -196,5 +198,5 @@ def main():
         else:
             print("failed to calculate Multiplication, columns of 1st matrix must be equal to rows of second matrix")
     print("operation completed successfully, results are stored in sample_outputs folder")
-if __name__== '_main_':
+if __name__== '__main__':
     main()
