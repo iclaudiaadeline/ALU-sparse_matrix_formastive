@@ -36,3 +36,12 @@ Each input file should be formatted
 
 
 This project is Based on data structures and matrix operations using Python.
+
+## 📌 Guiding through the whole process till it's finished
+You will be shown the existing files to perform operations on. NB. if you wanna choose Addition or Subtraction, you must choose matrix files with the same dimensions of row and columns. Those are either;** sparseMatrix1.txt to sparseMatrix2.txt** or matrixA.txt to matrixB.txt, otherwise you will see dimension error! and for multiplication only choose **sparseMatrix1 to sparseMatrix3.txt or sparseMatrix2.txt to sparseMatrix3 **
+
+
+
+## 📌 Example of how result is obtained
+![image](https://github.com/user-attachments/assets/08fcdee0-f761-4885-9893-2d3c5f563128)
+
