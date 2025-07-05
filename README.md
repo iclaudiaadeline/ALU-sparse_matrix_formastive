@@ -39,7 +39,8 @@ This project is Based on data structures and matrix operations using Python.
 
 ## 📌 Guiding through the whole process till it's finished
 You will be shown the existing files to perform operations on. NB. if you wanna choose Addition or Subtraction, you must choose matrix files with the same dimensions of row and columns. For instances on Addition and Subtraction, try;**easy_sample_03_1.txt to easy_sample_03_2.txt** or **matrix1.txt to matrix2.txt**, otherwise you will see dimension error! And
- for multiplication only choose **easy_sample_03_2.txt to easy_sample_03_3.txt**
+
+for multiplication only choose **easy_sample_03_2.txt to easy_sample_03_3.txt**
 
 
 
