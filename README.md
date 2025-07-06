@@ -13,7 +13,7 @@ This Python project implements operations on sparse matrices, including addition
   *  Matrix Multiplication
   
 
-## 📄 Input File Format
+##  Input File Format
 
 Each input file should be formatted
 
