@@ -32,7 +32,7 @@ Each input file should be formatted
 
 ## 📌 Requirements
 
-* Python 3.x
+* Python 3
 * IDE: VS Code Editor or any other IDEs
 
 
@@ -43,11 +43,21 @@ This project is Based on data structures and matrix operations using Python.
 ``bash
 git clone https://github.com/iclaudiaadeline/ALU-sparse_matrix_formastive
 ``
+
+
 **Navigate to ALU-sparse_matrix_formastive**
 ``bash
-cd ALU-sparse_matrix_formastive/
+cd Alu_sparsematrix-main/Alu_sparsematrix-main/dsa/sparese_matrix/code/src
 ``
 
+
+**Run SparceMatrix.py file**
+``bash
+python SparceMatrix.py
+``
+
+## OR Download a Zip file 
+In the home page of my repository https://github.com/iclaudiaadeline/ALU-sparse_matrix_formastive on the green button click on Download Zip file and follow the above process to run the app
 
 ## 📌 Guiding through the whole process till it's finished
 You will be shown the existing files to perform operations on. NB. if you wanna choose Addition or Subtraction, you must choose matrix files with the same dimensions of row and columns. For instances on Addition and Subtraction, try;**easy_sample_03_1.txt to easy_sample_03_2.txt** or **matrix1.txt to matrix2.txt**, otherwise you will see dimension error! And
